@@ -1,0 +1,18 @@
+<svg
+   xmlns="http://www.w3.org/2000/svg"
+   viewBox="0 0 56 56"
+   height="56"
+   width="56">
+   <path
+      style="fill:none;stroke:#ffffff;stroke-width:6;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+      d="M 10.666411,8.473299 28,22.455451 45.33359,8.473299"
+      id="path873">
+      <animate attributeName="stroke-opacity" values="1;0.5;0;0;0;1;" calcMode="linear" dur="2.5s" repeatCount="indefinite" />
+   </path>
+   <path
+      id="path928"
+      d="M 10.666411,34.473299 28,48.455451 45.33359,34.473299"
+      style="fill:none;stroke:#ffffff;stroke-width:6;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1">
+      <animate attributeName="stroke-opacity" values="0;0.5;1;0;0;0;" calcMode="linear" dur="2.5s" repeatCount="indefinite" />
+   </path>
+</svg>

@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Maxime Pico is a Sustainable Product Manager with over 10 years of experience. His rich entrepreneurial and consulting path has led him to be uniquely qualified to turn business ideas into full-scale running products. He will now apply his extensive skillset exclusively to products that contribute to making industries more sustainable.">
+    <link rel="icon" type="image/x-icon" href="./img/favicon.ico">
+    <title>Maxime Pico</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="https://www.youtube.com/player_api"></script>
+    <script type="text/javascript" src="script.js"></script>
+    <script>
+			// Check if there's any override. If so, let the markup know by setting an attribute on the <html> element
+			const colorModeOverride = window.localStorage.getItem('color-mode');
+			const hasColorModeOverride = typeof colorModeOverride === 'string';
+			if (hasColorModeOverride) {
+				document.documentElement.setAttribute('data-force-color-mode', colorModeOverride);
+			}
+      const vHeight = Math.max(document.documentElement.clientHeight || 0, window.innerHeight || 0)
+
+		</script>
+  </head>
+  <body>
+    <header>
+      <div id="definition" onclick="toggleHD()" value="run external javascript">HD</div>
+      <label class="switch" for="toggle-darkmode">
+        <input type="checkbox" id="toggle-darkmode" aria-label="Toggle darkmode" onclick="darkModeToggled()">
+        <span class="slider round"></span>
+      </label>
+    </header>
+    <div class="hero-container">
+      <div class="hero">
+        <img id="pp" class="hero-pp" alt="Maxime Pico Profile Photo" src="./img/pp.jpg" height="144" width="144"/>
+        <h2>Maxime Pico</h2>
+        <h1>Sustainable Product Manager</h1>
+        <div class="content">
+          <p>
+            Innovative Software Product Manager with 10 years of experience.
+          </p>
+          <p>
+            My <b>entrepreneurial</b> and <b>consulting path</b> has led me to be uniquely qualified to turn business ideas into full-scale running products.
+          </p>
+          <p>
+            I will now apply my skillset exclusively to products that <b>make industries more sustainable</b>.
+          </p>
+        </div>
+        <div class="scroll-container" onclick="window.scrollBy(0,vHeight*0.8)">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 56 56"
+            height="56"
+            width="56">
+            <path
+                style="fill:none;stroke-width:6;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+                stroke="currentColor"
+                d="M 10.666411,8.473299 28,22.455451 45.33359,8.473299"
+                id="path873">
+                <animate attributeName="stroke-opacity" values="1;0.5;0;0;0;1;" calcMode="linear" dur="2.5s" repeatCount="indefinite" />
+            </path>
+            <path
+                id="path928"
+                stroke="currentColor"
+                d="M 10.666411,34.473299 28,48.455451 45.33359,34.473299"
+                style="fill:none;stroke-width:6;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1">
+                <animate attributeName="stroke-opacity" values="0;0.5;1;0;0;0;" calcMode="linear" dur="2.5s" repeatCount="indefinite" />
+            </path>
+          </svg>
+        </div>
+      </div>
+    </div>
+    <div class="section-container light">
+      <div class="section">
+        <h2 id="section-2">My work</h2>
+        <div class="content">
+          <p>
+            Here are some of the products and projects I worked on over the past years:
+          </p>
+        </div>
+        <div class="grid">
+          <div class="card" onclick="openModal(1)">
+            <img alt="The Memtell App" src="./img/preview_memtell.jpg" height="200" width="382" /> 
+            <div class="title">
+              <h3>Memtell App (iOS & Android)</h3>
+              <div class="button">
+                <svg class="more" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+              </div>
+            </div>
+          </div>
+          <div class="card" onclick="openModal(2)">
+            <img alt="The Recygo Web App" src="./img/preview_recygo.jpg" height="200" width="382" /> 
+            <div class="title">
+              <h3>Recygo (Web App)</h3>
+              <div class="button">
+                <svg class="more" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+              </div>
+            </div>
+          </div>
+          <div class="card" onclick="openModal(3)">
+            <img alt="The Rebites Burger" src="./img/preview_rebites.jpg" height="200" width="382" /> 
+            <div class="title">
+              <h3>Rebites (Food Product)</h3>
+              <div class="button">
+                <svg class="more" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+              </div>
+            </div>
+          </div>
+          <div class="card" onclick="openModal(4)">
+            <img alt="The Karma Web App" src="./img/preview_karma.jpg" height="200" width="382" /> 
+            <div class="title">
+              <h3>Karma (Web App)</h3>
+              <div class="button">
+                <svg class="more" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section-container secondary-light" id="carousel-section">
+      <div class="section">
+        <h2>Recommendations</h2>
+        <div class="content">
+          <p>
+            People I have worked with in the past wish to work with me again:
+          </p>
+        </div>
+        <div class="carousel-container" ontouchstart="carouselSlide(event)" >
+          <div class="carousel">
+            <div class="slide active">
+              <img alt="Jonothan Birkett" src="./img/pp_jono.jpg" height="100" width="100" /> 
+              <div class="content">
+                <blockquote>“Maxime took great initiative and responsibility for all his tasks as well as proving to be an invaluable support when developing a strategic vision and plan.”</blockquote>
+                <div class="author">
+                  <h3>– Jonothan Birkett</h3>
+                  <p>CEO @ Memtell GmbH</p>
+                </div>
+              </div>
+            </div>
+            <div class="slide">
+              <img alt="Frederic Simons" src="./img/pp_fred.jpg" height="100" width="100"/> 
+              <div class="content">
+                <blockquote>“I highly recommend Maxime for his expertise in ideation, interviews and UX. He has been an invaluable asset to our team and has helped deliver outstanding results for our clients' MVPs.”</blockquote>
+                <div class="author">
+                  <h3>– Frederic Simons</h3>
+                  <p>Co-founder @ 12MVP</p>
+                </div>
+              </div>
+            </div>
+            <div class="slide">
+              <img alt="Wilhelm Hammes" src="./img/pp_walle.jpg" height="100" width="100"/> 
+              <div class="content">
+                <blockquote>“I was very fortunate to have worked with Maxime, he's an absolute brain and one of the smartest people I met. He's very analytic and data-driven, understands problems extremely well and gets to the core, while also thinking outside the box. Above all, I appreciated his hands-on mentality.”</blockquote>
+                <div class="author">
+                  <h3>– Wilhelm Hammes</h3>
+                  <p>CEO @ PLANTED.GREEN</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-dots">
+            <div class="dot active" onclick="carouselDot(0)" value="run external javascript"></div>
+            <div class="dot" onclick="carouselDot(1)" value="run external javascript"></div>
+            <div class="dot" onclick="carouselDot(2)" value="run external javascript"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section-container light">
+      <div class="section">
+        <h2>Skills</h2>
+        <div class="content">
+          <p>
+            My curiosity and passion have driven me to add many layers to my engineering foundations. 
+          </p>
+          <p>
+            As a Product Manager, this gives me a unique edge to build a solid strategy and also have the skills and hands-on experience to understand and guide my team to success:
+          </p>
+        </div>
+        <div class="columns">
+          <div class="column">
+            <h3>Design</h3>
+            <ul>
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 256 256"><path d="M246,98.73l-56-64A8,8,0,0,0,184,32H72a8,8,0,0,0-6,2.73l-56,64a8,8,0,0,0,.17,10.73l112,120a8,8,0,0,0,11.7,0l112-120A8,8,0,0,0,246,98.73ZM222.37,96H180L144,48h36.37ZM74.58,112l30.13,75.33L34.41,112Zm89.6,0L128,202.46,91.82,112ZM96,96l32-42.67L160,96Zm85.42,16h40.17l-70.3,75.33ZM75.63,48H112L76,96H33.63Z"></path></svg>
+                <span>Framer/Sketch</span>
+              </li>
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 96 960 960" width="24" stroke="currentColor"><path d="M240 976V804q-57-52-88.5-121.5T120 536q0-150 105-255t255-105q125 0 221.5 73.5T827 441l55 218q4 14-5 25.5T853 696h-93v140q0 24.75-17.625 42.375T700 896H600v80h-60V836h160V636h114l-45-180q-24-97-105-158.5T480 236q-125 0-212.5 86.5T180 533.54q0 64.417 26.324 122.392Q232.649 713.908 281 759l19 18v199h-60Zm257-370Zm-48 76h60l3-44q12-2 22.472-8.462Q544.944 623.077 553 615l42 14 28-48-30-24q5-14 5-29t-5-29l30-24-28-48-42 14q-8.333-7.692-19.167-13.846Q523 421 512 418l-3-44h-60l-3 44q-11 3-21.833 9.154Q413.333 433.308 405 441l-42-14-28 48 30 24q-5 14-5 29t5 29l-30 24 28 48 42-14q8.056 8.077 18.528 14.538Q434 636 446 638l3 44Zm30.118-84Q450 598 429.5 577.618q-20.5-20.383-20.5-49.5Q409 499 429.382 478.5q20.383-20.5 49.5-20.5Q508 458 528.5 478.382q20.5 20.383 20.5 49.5Q549 557 528.618 577.5q-20.383 20.5-49.5 20.5Z"/></svg><span>Persona</span>
+              </li>
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 96 960 960" width="24" stroke="currentColor"><path d="M680 726q-50 0-85-35t-35-85q0-50 35-85t85-35q50 0 85 35t35 85q0 50-35 85t-85 35Zm0-60q25.5 0 42.75-17.25T740 606q0-25.5-17.25-42.75T680 546q-25.5 0-42.75 17.25T620 606q0 25.5 17.25 42.75T680 666Zm-240 340V890q0-21 10-39.5t28-29.5q28-17 58-29.5t62-20.5l82 106 82-106q32 8 61.5 20.5T881 821q18 11 28.5 29.5T920 890v116H440Zm60-60h157l-82-106q-20 8-39 17.5T500 878v68Zm203 0h157v-68q-17-11-35.5-20.5T786 840l-83 106Zm-46 0Zm46 0Zm-523-10q-24.75 0-42.375-17.625T120 876V276q0-24.75 17.625-42.375T180 216h600q24.75 0 42.375 17.625T840 276v247q-11-20-26-37t-34-30V276H180v600h200v60H180Zm100-500h341q14-5 28.84-7.5Q664.681 426 680 426v-50H280v60Zm0 170h220q0-15 2.5-30.5T510 546H280v60Zm0 170h158q17-13 36-21.5t39-16.5v-22H280v60ZM180 876V276v180-30 450Zm500-270Z"/></svg>
+                <span>Interviewing</span>
+              </li>
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 96 960 960" width="24" stroke="currentColor"><path d="M435 976q-48-7-93-25t-85-48l43-44q32 24 66 37.5t69 19.5v60Zm90 0v-60q110-21 182.5-103.5T780 613q0-127-86.5-213.5T480 313h-20l79 79-44 44-153-153 153-153 44 44-79 79h20q75 0 140.5 28T735 358q49 49 77 114.5T840 613q0 140-89 241T525 976ZM194 840q-28-38-46.5-84.5T122 658h61q5 38 18.5 73t36.5 65l-44 44Zm-72-272q7-50 25-95.5t47-85.5l44 43q-23 33-36.5 68T183 568h-61Z"/></svg>
+                <span>Lean Startup</span>
+              </li>
+            </ul>
+          </div>
+          <div class="column">
+            <h3>Build</h3>
+            <ul>
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 256 256"><path d="M240,100.68a15.86,15.86,0,0,0-4.69-11.31L166.63,20.68a16,16,0,0,0-22.63,0L115.57,49.11l-58,21.77A16.06,16.06,0,0,0,47.35,83.23L24.11,222.68A8,8,0,0,0,32,232a8.4,8.4,0,0,0,1.32-.11l139.44-23.24a16,16,0,0,0,12.35-10.17l21.77-58L235.31,112A15.87,15.87,0,0,0,240,100.68Zm-69.87,92.19L55.32,212l47.37-47.37a28,28,0,1,0-11.32-11.32L44,200.7,63.13,85.86,118,65.29,190.7,138ZM104,140a12,12,0,1,1,12,12A12,12,0,0,1,104,140Zm96-15.32L131.31,56l24-24L224,100.68Z"></path></svg>
+                <span>Illustrator</span>
+              </li>
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="m5,19c9,0,5-14,14-14" style="fill:none; stroke:currentColor; stroke-linecap:round; stroke-miterlimit:10; stroke-width:2px;"/></svg>
+                <span>Lottie</span>
+              </li>
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="-11.5 -10.23174 23 20.46348" width="24" height="24"> <title>React Logo</title> <circle cx="0" cy="0" r="2.05" fill="currentColor"/> <g stroke="currentColor" stroke-width="1" fill="none"> <ellipse rx="11" ry="4.2"/> <ellipse rx="11" ry="4.2" transform="rotate(60)"/> <ellipse rx="11" ry="4.2" transform="rotate(120)"/> </g></svg>
+                <span>React JS</span>
+              </li>
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 96 960 960" width="24" stroke="currentColor"><path d="M766 936q-41 0-71.5-24.5T656 852H443q-66 0-109.5-43.5T290 699q0-66 43.5-109.5T443 546h77q41 0 67-26t26-67q0-41-26-67t-67-26H304q-9 35-39 59.5T194 444q-48 0-81-33t-33-81q0-48 33-81t81-33q41 0 71 24.5t39 59.5h216q66 0 109.5 43.5T673 453q0 66-43.5 109.5T520 606h-77q-41 0-67 26t-26 67q0 41 26 67t67 26h213q9-35 39-59.5t71-24.5q48 0 81 33t33 81q0 48-33 81t-81 33ZM194 384q23 0 38.5-15.5T248 330q0-23-15.5-38.5T194 276q-23 0-38.5 15.5T140 330q0 23 15.5 38.5T194 384Z"/></svg>
+                <span>Analytics</span>
+              </li>
+            </ul>
+          </div>
+          <div class="column">
+            <h3>Distribute</h3>
+            <ul>
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 96 960 960" width="24" stroke="currentColor"><path d="M468 816q-96-5-162-74t-66-166q0-100 70-170t170-70q97 0 166 66t74 163l-63-20q-11-64-60-106.5T480 396q-75 0-127.5 52.5T300 576q0 67 42.5 116.5T449 753l19 63Zm48 158q-9 1-18 1.5t-18 .5q-83 0-156-31.5T197 859q-54-54-85.5-127T80 576q0-83 31.5-156T197 293q54-54 127-85.5T480 176q83 0 156 31.5T763 293q54 54 85.5 127T880 576q0 9-.5 18t-1.5 18l-58-18v-18q0-142-99-241t-241-99q-142 0-241 99t-99 241q0 142 99 241t241 99h18l18 58Zm305 22L650 825l-50 151-120-400 400 120-151 50 171 171-79 79Z"/></svg>
+                <span>Display Ads</span>
+              </li>
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 96 960 960" width="24" stroke="currentColor"><path d="m392 743 260-169-260-169v338ZM140 896q-24 0-42-18t-18-42V316q0-24 18-42t42-18h680q24 0 42 18t18 42v520q0 24-18 42t-42 18H140Zm0-60h680V316H140v520Zm0 0V316v520Z"/></svg>
+                <span>Video Ads</span>
+              </li>
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 96 960 960" width="24" stroke="currentColor"><path d="M140 896q-24 0-42-18t-18-42V316q0-24 18-42t42-18h680q24 0 42 18t18 42v520q0 24-18 42t-42 18H140Zm340-302L140 371v465h680V371L480 594Zm0-60 336-218H145l335 218ZM140 371v-55 520-465Z"/></svg>
+                <span>Emailing Funnels</span>
+              </li>
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 96 960 960" width="24" stroke="currentColor"><path d="M180 876h44l443-443-44-44-443 443v44Zm614-486L666 262l42-42q17-17 42-17t42 17l44 44q17 17 17 42t-17 42l-42 42Zm-42 42L248 936H120V808l504-504 128 128Zm-107-21-22-22 44 44-22-22Z"/></svg>
+                <span>Content Strategy</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section-container primary">
+      <div class="section">
+        <h2>Sustainable Web Designer</h2>
+        <div class="content">
+          <p>
+            In 2022 I became a certified "Sustainable Web Designer" through Inco's Green Digital Skills program.
+          </p>
+          <p>
+            I learnt how to design a software product to have a minimal environmental impact.
+          </p>
+          <p>
+            This website and the counter at the bottom right are illustrations of these skills.
+          </p>
+        </div>
+        <a class="gds logo-container" href="https://www.greenskills.inco-group.co/" target="_blank">
+          <img class="logo" alt="Green Digital Skills Certificate" src="./img/gds_logo.webp" height="56" width="267"/>
+        </a>
+      </div>
+    </div>
+    <div class="section-container light">
+      <div class="section">
+        <h2>Not-for-profit engagements</h2>
+        <div class="content">
+          <p>
+            In 2022 I started volunteering at and taking part in meetings of "The Shifters", a not-for-profit that works towards making our economies "post-carbon".
+          </p>
+        </div>
+        <a href="https://www.theshifters.org/" target="_blank" class="logo-container">
+          <img class="logo" alt="The Shifters logo" src="./img/theshifters_logo.svg" height="64" width="126"/>
+        </a>
+      </div>
+    </div>
+    <div id="modal-1" class="modal-container" onclick="closeModalBg(1)">
+      <div class="modal">
+        <svg class="exit" onclick="closeModal(1)" value="run external javascript" alt="click to close the modal" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+        <h3>
+          Memtell App (iOS & Android)
+        </h3>
+        <div class="content">
+          <p>In more than 3 years working at Memtell as a co-founder and Chief Product Officer, I had to start many projects from scratch, leveraging opportunities we saw on the market and skills we had inhouse.</p>
+          <p>Below you can see a few of the products I could work on:</p>
+          <div class="carousel-container">
+            <div class="carousel">
+              <div class="buttons">
+                <svg class="button prev" onclick="modalSlide(1, -1)" value="run external javascript" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
+                <svg class="button next" onclick="modalSlide(1, 1)" value="run external javascript" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
+              </div>
+              <div class="modal-slide active">
+                <div class="slide-image" style="background-image: url(./img/modal_memtell_p1.jpg);">
+                </div> 
+                <div class="content">
+                  <p>The vision for the Memtell app was to capture family oral history. We interviewed users, designed and created a React Native app for iOS and Android.</p>
+                </div>
+              </div>
+              <div class="modal-slide">
+                <div class="slide-image" style="background-image: url(./img/modal_memtell_p2.jpg);">
+                </div> 
+                <div class="content">
+                  <p>We initially raised 400k€ from a Stationery company to form a partnership by creating web-AR greeting cards using our app.</p>
+                </div>
+              </div>
+              <div class="modal-slide">
+                <div id="player-1" class="player-container"></div>
+                <div class="content">
+                  <p>Inside the app, users could easily generate slideshows from a few photos and later add a narration, music, intros etc.</p>
+                </div>
+              </div>
+              <div class="modal-slide">
+                <div class="slide-image" style="background-image: url(./img/modal_memtell_p4.jpg);">
+                </div> 
+                <div class="content">
+                  <p>We moved on to offering the same for wedding invitation cards and built a Shopify shop offering online customisation.</p>
+                </div>
+              </div>
+              <div class="modal-slide">
+                <div class="slide-image" style="background-image: url(./img/modal_memtell_p5.jpg);">
+                </div>
+                <div class="content">
+                  <p>We also explored retail product "games" focused on capturing the family history and developed a QR sticker to use inside albums.</p>
+                </div>
+              </div>
+              <div class="modal-slide">
+                <div id="player-2" class="player-container"></div>
+                <div class="content">
+                  <p>We moved on and looked into how VR/3D spaces could help curators tell the story behind their pieces.</p>
+                </div>
+              </div>
+              <div class="modal-slide">
+                <div class="slide-image" style="background-image: url(./img/modal_memtell_p7.jpg);">
+                </div> 
+                <div class="content">
+                  <p>As a last resort, we did a one-month sprint that focused on building an article-to-video bot based on the GPT-API.</p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-pagination">
+              <span class="current-page">1</span> / <span class="total-pages">7</span>
+            </div>
+          </div>
+        </div>
+        </div>
+      </div>
+    </div>
+    <div id="modal-2" class="modal-container" onclick="closeModalBg(2)">
+      <div class="modal">
+        <svg class="exit" onclick="closeModal(2)" value="run external javascript" alt="click to close the modal" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+        <h3>
+          Recygo (Web App)
+        </h3>
+        <div class="content">
+          <p>As a consultant for <a href="https://12mvp.fr/home" target="_blank"><b>12MVP</b></a> I had the chance to work on several interesting projects. There I had to interview internal and external stakeholders to identify the problems, lead ideation workshops to come up with solutions and design the product roadmap (and UX) so that we could have short lean product iterations.</p>
+          <p>Recygo was an interesting case where we had to develop an internal tool to help the sales team quote complex solutions for the setup of garbage recycling.</p>
+          <img src="./img/modal_recygo.jpg" alt="A mock-up from the Recygo internal app" />
+        </div>
+      </div>
+    </div>
+    <div id="modal-3" class="modal-container" onclick="closeModalBg(3)">
+      <div class="modal">
+        <svg class="exit" onclick="closeModal(3)" value="run external javascript" alt="click to close the modal" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+        <h3>
+          Rebites (Food Product)
+        </h3>
+        <div class="content">
+          <p>What if eating a burger patty was contributing to capturing CO2?</p>
+          <p>This is the question we set out to answer when my co-founder and I learnt that there is a bacteria (methylococcus capsulatus) that use methane in its fermentation process to produce proteins containing all 12 essential amino acids.</p>
+          <div class="carousel-container">
+            <div class="carousel">
+              <div class="buttons">
+                <svg class="button prev" onclick="modalSlide(3,-1)" value="run external javascript" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
+                <svg class="button next" onclick="modalSlide(3, 1)" value="run external javascript" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
+              </div>
+              <div class="modal-slide active">
+                <div class="slide-image" style="background-image: url(./img/modal_rebites_p1.jpg);">
+                </div> 
+                <div class="content">
+                  <p>Here's a packaging mock we did of the product. Rebites "Guilt Free Food", the first burger patty contributing to reversing climate change! (negative LCA)</p>
+                </div>
+              </div>
+              <div class="modal-slide">
+                <div class="slide-image" style="background-image: url(./img/modal_rebites_p2.jpg);">
+                </div> 
+                <div class="content">
+                  <p>Through some clever market analysis, I could find out key facts about the market appetite for this type of product.</p>
+                </div>
+              </div>
+              <div class="modal-slide">
+                <div class="slide-image" style="background-image: url(./img/modal_rebites_p3.jpg);">
+                </div>
+                <div class="content">
+                  <p>Using a novel food in our recipe meant potential safety issues. I was also in charge of researching the state of the art regarding health and tech.</p>
+                </div>
+              </div>
+              <div class="modal-slide">
+                <div class="slide-image" style="background-image: url(./img/modal_rebites_p4.jpg);">
+                </div>
+                <div class="content">
+                  <p>Another key part of the mission was to evaluate the impact of the upstream supply chain and identify relevant key partners and processes to keep the LCA down.</p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-pagination">
+              <span class="current-page">1</span> / <span class="total-pages">4</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="modal-4" class="modal-container" onclick="closeModalBg(4)">
+      <div class="modal">
+        <svg class="exit" onclick="closeModal(4)" value="run external javascript" alt="click to close the modal" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+        <h3>
+          Karma (Web App)
+        </h3>
+        <div class="content">
+          <p>As a side project, some friends and I set out to build a not-for-profit crowd-sourced CSR rating of companies.</p>
+          <p>Since most rating platforms are run by private companies, business models force biased or obscure ratings. We think a wikipedia-style model would bring transparency to the topic.</p>
+          <img src="./img/modal_karma.jpg" alt="A screenshot form the Karma platform"/>
+        </div>
+      </div>
+    </div>
+    <footer class="section-container secondary">
+      <div class="section centered">
+        <h2>Contact</h2>
+        <div class="content text-centered">
+          <p class="cta">
+            Want to work with me? Get in touch!
+          </p>
+          <div class="contacts">
+            <p><a href="mailto:pico.maxime@gmail.com">pico.maxime@gmail.com</a></p>
+            <p><a href="https://linkedin.com/in/maximepico">linkedin.com/in/maximepico</a></p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div id="counter-container" onclick="minimizeInfoBg()">
+      <div id="counter-box">
+        <div class="exit">
+          <svg onclick="minimizeInfo()" value="run external javascript" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-minimize-2"><polyline points="4 14 10 14 10 20"></polyline><polyline points="20 10 14 10 14 4"></polyline><line x1="14" y1="10" x2="21" y2="3"></line><line x1="3" y1="21" x2="10" y2="14"></line></svg>
+        </div>
+        <div class="spacer"></div>
+        <span id="points"></span>
+        <div class="cost">
+          <h2 class="unit spacer">gCO2e</h2>
+          <h1 id="counter">0.108</h1>
+          <h2 class="unit">gCO2e</h2>
+        </div>
+        <div class="info" onclick="maximizeInfo()">
+          learn more
+        </div>
+        <div class="content">
+          <p>
+            Yes, you guessed it right, <b>this is your carbon footprint while visiting my website</b>.
+          </p>
+          <p>
+            Everything we do, whether it's watching Netflix for 30mn (<a target="_blank" href="https://theshiftproject.org/wp-content/uploads/2020/06/2020-06_Did-TSP-overestimate-the-carbon-footprint-of-online-video_EN.pdf">200g CO2e</a>), sending a short email (<a target="_blank" href="https://theshiftproject.org/wp-content/uploads/2019/03/Lean-ICT-Report_The-Shift-Project_2019.pdf">0.3g CO2e</a>), or performing a Google Search (<a target="b
+            " href="https://greenspector.com/en/search-engines/">0.192g CO2e</a>), has an impact.
+          </p>
+          <h2>How did I generate so much CO2e?</h2>
+          <ul>
+            <li>
+              <b>The energy through data transfer</b>: while the default version of this page is rated <a href="https://digitalbeacon.co/report/maximepico-com" target="_blank">"Amazing" according to the Digital Beacon</a> and <a target="_blank" href="https://www.websitecarbon.com/website/maximepico-com/">"cleaner than 97% of web pages tested" by the webistecarbon.com</a>, it still uses an estimated 0.108g of C02e upon first download, an additional 1.148g of CO2e if you decide to toggle the HD mode and 16.390g of CO2e if you watched both videos entirely.
+            </li>
+            <li>
+              <b>The energy use of your computer</b>: that's why the counter is ticking every second. Every second spent on a website emits <a target="_blank" href="https://www.energuide.be/en/questions-answers/how-much-power-does-a-computer-use-and-how-much-co2-does-that-represent/54/#:~:text=A%20computer%20that%20is%20on,of%20CO2%20per%20year.">0.008g CO2e</a> and <a target="bl
+              " href="https://dodonut.com/blog/does-dark-mode-save-battery/#:~:text=However%2C%20since%20most%20people%20don,%25%20at%20100%25%20screen%20brightness.">40% less for a "dark mode" interface</a>, provided you have an OLED screen. However, a <a href="https://pubmed.ncbi.nlm.nih.gov/23654206/" target="b
+              "></a>study showed that "dark mode" is more tiring to read in a lit environment. This website uses a lot of text, and you're likely reading in a lit environment. As a result I chose not to enable it by default.
+            </li>
+            <li>
+              <b>The energy use of the data centre providing the hosting</b>: Data transfer calculations already include the impact of hosting. I am using a <a href="https://www.thegreenwebfoundation.org/green-web-check/?url=https%3A%2F%2Fmaximepico.com" target="_blank">local green hosting provider</a> for this website which means that most numbers are slightly over-estimated since they are estimated for an average provider (usually not green).
+            </li>
+          </ul>
+          <p>
+            The carbon footprint of our gadgets, the internet, and the systems supporting them account for 3.7%</a> of global greenhouse emissions, similar to the airline industry. These emissions are predicted to double by 2025 (<a href="https://theshiftproject.org/wp-content/uploads/2019/03/Lean-ICT-Report_The-Shift-Project_2019.pdf" target="_blank">source</a>).
+          </p>
+          <p>
+            While it seems complicated to imagine that browsing the internet has such a strong impact, usage through networks, data centres and devices is responsible for 56% of the GHG emissions of the ICT sector (<a target="_blank" href="https://www.greenit.fr/wp-content/uploads/2019/11/GREENIT_EENM_etude_EN_accessible.pdf">source</a>).
+          </p>
+          <p>
+            I've decided to visually represent your impact while browsing this website as an <b>awareness exercise</b> and a demonstration of my skills and knowledge. The number displayed by the counter is in grams of CO2 equivalents.
+          </p>
+          <p>
+            <i>As managers, leaders and product owners, all of that is in our power to request, prioritise and implement.</i>
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script type="text/javascript" src="theme.js"></script>
+  <script>
+      if (colorModeOverride == 'dark') {
+        document.querySelector('#toggle-darkmode').checked = true;
+			}
+  </script>
+</html>

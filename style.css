@@ -531,7 +531,11 @@ p.cta{
   font-weight: 200;
 }
 
-.contacts > * > a {
+.contacts {
+  gap: 24px;
+}
+
+.contacts a {
   color: white;
 }
 
